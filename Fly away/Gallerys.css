@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #CFCFCF !important;
+
+}
+
+main img{
+    height: 450px;
+    width: 60%;
+    border-radius: 50px;
+    margin: 120px;
+    border: solid 4px #0d4eaf52;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* background: rgba(1, 51, 70, 0.466); */
+    background: #0D4EAF;
+    align-items: center;
+    padding: 12px 0;
+    padding: 0 68px;
+}
+
+.logo {
+    width: 54px;
+}
+
+.wrapper-logo {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.links{
+    display: flex;
+    gap: 12px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 800ms;
+
+}
+
+.links a:hover {
+    color: grey;
+    transform: scale(1.05);
+}
+
+.bar {
+    display: none !important;
+}
+
+header nav .links {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 150px;
+}
+
+header nav .links a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+}
+
+header nav .links a:hover {
+    background: rgba(240, 255, 255, 0);
+    color: rgb(73, 72, 72);
+    transform: scale(1.05);
+   
+}
+
+header nav .burger {
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    padding-top: 25%;
+}
+
+.top{
+    margin-top: 8%;
+    border-radius: 7%;
+}
+
+iframe{
+    border-radius: 7%;
+}
+
+@media(width<600px) {
+    .bar {
+        display: block !important;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .links {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .wrapper-logo {
+        display: none;
+    }
+
+    nav {
+        padding: 12px 24px;
+        min-height: 58px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bar {
+        display: block !important;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .links {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .wrapper-logo {
+        display: none;
+    }
+
+    nav {
+        padding: 12px 24px;
+        min-height: 58px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    bar {
+        display: block !important;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .links {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .wrapper-logo {
+        display: none;
+    }
+
+    nav {
+        padding: 12px 24px;
+        min-height: 58px;
+    }
+  }
+
+/* #id_gallery{
+    justify-content: center;
+} */
+
+/* body {
+    margin: 0;
+    font-size: 25px;
+} */
+
+/* img{
+    object-fit: cover;
+    width: 30%;
+} */
+
+/* header {
+    height: 180px;
+    background: #5A9CD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #326099;
+}
+
+main {
+    background: black;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.boxTop {
+    width: 33.333333%;
+    height: 300px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxButtom {
+    width: 48%;
+    height: 170px;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+    ;
+}
+
+.white {
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+.blue {
+    background: blue;
+    border: 1px solid white;
+}
+
+footer {
+    height: 165px;
+    background: #33921c;
+}
+
+footer a {
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    background: rgb(16, 161, 171);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition-duration: 800ms;
+}
+
+footer a:hover {
+    background: white;
+    color: rgb(16, 161, 171);
+    transform: scale(1.2);
+}
+
+.animation {
+    transition-duration: 800ms;
+    filter: grayscale(100%);
+}
+
+.animation:hover {
+    transform: scale(1.2);
+    filter: grayscale(0);
+} */

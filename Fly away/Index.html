@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="burger/mtBurger.js"></script>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+</head>
+
+<body>
+    <header class="header-container fixed-top text-light">
+        <nav>
+            <div class="wrapper-logo">
+                <h2 class="sofia"><b>Fly Away</b></h2>
+            </div>
+            <div id="id_nav_show_hide" class="links">
+                <a href="#">Home</a>
+                <a href="#About_Us">About</a>
+                <a href="#London">Gallery</a>
+                <a href="contact.html">Support</a>
+                <a href="#Contact">Contact</a>
+            </div>
+            <i id="bar" class="fa-solid fa-bars bar"></i>
+        </nav>
+    </header>
+    
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner carousel carousel slid">
+      <div class="carousel-item active">
+        <img src="./pic/london-carousel-3.jpg" class="d-block w-100" alt="picture of london">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>First slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the first slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./pic/new york carousel-3.jpg" class="d-block w-100" alt="picture of nuw york">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Second slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the second slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./pic/paris-carousel-4.jpg" class="d-block w-100" alt="picture of paris">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Third slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./pic/london-carousel-1.jpg" class="d-block w-100" alt="picture of london">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>forth slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the forth slide.</p> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row mt-2 justify-content-around align-items-lg-start p-5">
+    <div class="col-md-4 col-xl-3 zoom" style="height: 30%;" data-aos="zoom-in-right" id="London"> 
+      <img src="./pic/london-5.jpg" alt="picture of london">
+      <h2>London</h2>
+      <p><b>5 days all-inclusive in a 4-star hotel in the center of London.
+        Direct flight from RLV to LTR trolley + large suitcase.
+        A central hotel near Buckingham Palace.
+        Members of the Fly Away Club? Let us plan your vacation for you.</b> </p>
+      <button type="button" onclick="btnLondon()" class="btn btn-outline-primary">
+        Book Now
+      </button> 
+    </div>
+    
+    <div class="col-md-4 col-xl-3" style="height: 30%;" data-aos="fade-up">
+      <img src="./pic/new york city-3.jpg" alt="picture of nuw york">
+      <h2>New York</h2>
+      <p><b>A 10-day vacation for a couple in New York at a 5-star all-inclusive hotel.
+        Direct flight from TLV to JFK New York.
+        A small bag + a suitcase for each.<br>
+        Members of the Fly Away Club? <br> Let us plan your vacation for you.</b></p>
+        <button type="button" onclick="btnNewYork()" class="btn btn-outline-primary">
+           Book Now
+        </button> 
+    </div>
+    <div class="col-md-4 col-xl-3" style="height: 30%;" data-aos="zoom-in-left">
+      <img src="./pic/paris-4.jpg" alt="picture of paris">
+      <h2>Paris</h2>
+      <p><b>Wednesday to Saturday: a dream vacation weekend for a couple in Paris, the city of lights.
+        4-star hotel near the Eiffel Tower.
+        A variety of attractions and restaurants are within a short walking distance from the hotel.
+        Direct flight from TLV to CDG.
+        A small bag + a large suitcase for each.</b></p>
+        <button type="button" onclick="btnParis()" class="btn btn-outline-primary">
+          Book Now
+        </button> 
+    </div>
+  </div>
+
+  <main class="row d-flex justify-content-lg-between m-5 p-3">
+    <div class="part_two" id="About_Us">
+      <div class="row d-flex justify-content-lg-between">
+        <div class="box box1 col-lg-5 mb-5 pl-3" data-aos="fade-right">
+          <h2 class="mb-4">About us</h2>
+
+          <img
+            src="./pic/about/pexels-andrea-piacquadio-3769146.jpg"
+            alt="woman falling" class="w-100 mb-3">
+          <h3>Our vision</h3>
+          <p><b>
+            who we are... Fly Away was founded by Ofir Cohen, the owner and acting CEO.<br> Asher founded the company out of a desire and intention to make the vacation of his dreams accessible to every person and every budget. At Fly Away you can choose any destination in the world and even plan your itinerary completely by yourself and according to your budget.
+            You do not need a travel agency and unnecessary fees. And how does it all work? You choose your destination for your next vacation, how many people you are, what is your budget for the whole vacation and how long it will last.
+            Based on all these parameters, we already know how to present you with all the destinations, hotels, flights and attractions that are suitable for you. But why exactly are we here, you ask? Because at Fly Away, we are not just an intelligent booking engine, but first and foremost, we are people. Our staff is here for you 24/7. So what are you waiting for? Let us plan your vacation.
+          </b></p>
+          <button type="button" onclick="btnPlannin()" class="btn btn-outline-primary">
+            start planning
+         </button>
+        </div>
+
+        <div class="col-lg-7 p-0 mb-5 pl-3 pl-lg-5" data-aos="fade-left">
+          <h2 class="mb-4">Location</h2>
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 750px">
+            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+  </main>
+
+     <section class="cta aos-init aos-animate text-light" id="Contact" data-aos="zoom-in" data-aos-duration="1500">
+       <h1>Want to talk to us?<br>Now it's simple from anywhere.</h1>
+       <a href="contact.html" class="contact-us" >CONTACT US
+        <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+     </section>
+
+  <footer>
+      <div class="container">
+        <nav class="d-flex flex-wrap justify-content-around align-items-center" style="background-color: #CFCFCF; border-top: 1px solid rgb(70, 69, 69);">
+          <a href="https://www.facebook.com/login/" target="blank"><i class="fa fa-facebook-official" 
+              aria-hidden="true" ></i></a>
+          <a href="https://twitter.com/i/flow/login" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="https://www.tripadvisor.co.il/" target="blank"><i class="fa fa-tripadvisor"
+              aria-hidden="true"></i></a>
+        </nav>
+        <p class="d-flex flex-wrap justify-content-around align-items-center p-5">
+          © Ofir Cohen 2023</p>
+      </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./burger/burger.js"></script>
+  <script defer src="burger/mtBurger.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="./test.js"></script>
+  <script>
+    AOS.init();
+    function btnLondon(){
+    window.location.href="GalleryLondon.html"
+    target = "_blank";
+}
+function btnNewYork(){
+    window.location.href="GalleryNewYork.html"
+    target = "_blank";
+}
+function btnParis(){
+    window.location.href="GalleryParis.html"
+    target = "_blank";
+}
+function btnPlannin(){
+    window.location.href="start_planning.html"
+    target = "_blank";
+}
+  </script>
+</body>
+
+</html>
